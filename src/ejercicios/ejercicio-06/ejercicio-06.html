@@ -5,8 +5,43 @@
   </head>
   <body>
     <h1>Ejercicio 6: Validación de Formularios</h1>
+
+    <form action="#" method="post"><!-- Crea un formulario con el método "post" -->
+      <label for="nombre"><b>Nombre: </b></label>
+      <input type="text" name="nombre" id="nombre" required><!-- Añade un campo de texto para el nombre con el atributo "name" establecido como "nombre" -->
+      <label for="email"><b>email: </b></label>
+      <input type="email" name="email" id="email" pattern=""><!-- Añade un campo de texto para el correo electrónico con el atributo "name" establecido como "email" -->
+      <label for="edad"><b>Edad: </b></label>
+      <select name="edad"><!-- Añade un campo de selección para la edad con el atributo "name" establecido como "edad" -->
+        <option value="18">18</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+      </select>
+      
+    </form>
+    <label for="sexo"><b>Sexo: </b></label>
+    <select name="sexo"><!-- Añade un campo de selección para el sexo con el atributo "name" establecido como "sexo" -->
+        <option value="masculino">M</option>
+        <option value="femenino">F</option>
+    </select>
+
+    <label for="contraseña"><b>Contraseña: </b></label>
+
+    <input type="password" name="contraseña" id="contraseña" minlength="8"  required> <!-- Añade un campo de contraseña para la contraseña con el atributo "name" establecido como "contraseña" -->
+
+    <label for="confirmación de cantraseña"><b>Confirmación de contraseña: </b></label>
+    <input type="password" name="confirmación de contraseña" id="confirmación de contraseña" minlength="8" required>  <!-- Añade un campo de confirmación de contraseña para la confirmación de contraseña con el atributo "name" establecido como "confirmación de contraseña" -->
+
+    <button type="button">Enviar</button> <!-- Añade un botón de envío con el valor "Enviar" -->
+    
+    
+    
     <!-- Añade validación a los campos del formulario del ejercicio anterior utilizando atributos de html. -->
 
     <!-- Verifica que los campos de texto no estén vacíos con el uso del atributo required-->
+
+
   </body>
 </html>
